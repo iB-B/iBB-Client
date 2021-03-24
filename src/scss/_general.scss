@@ -1,5 +1,6 @@
-body {
+body, html {
   background-color: #fff;
+  font-family: 'Poppins', sans-serif;
 }
 
 .container-fluid {
@@ -12,7 +13,6 @@ body {
 
 .section-title {
   @extend .mb-2;
-  font-weight: bold;
   font-size: 18px;
 }
 

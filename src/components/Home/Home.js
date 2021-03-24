@@ -21,7 +21,7 @@ class Home extends Component {
 
         <div className="container-section">
           <div className="slider-container">
-            <h6 className="section-title">Locals Favorite Gems</h6>
+            <h6 className="section-title">Locals&apos; Favorite Gems</h6>
             <div className="horizontal-scroller">
               <div className="box scroll-item" style={{ backgroundImage: 'url(https://images.pexels.com/photos/1423827/pexels-photo-1423827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)' }}></div>
               <div className="box scroll-item" style={{ backgroundImage: 'url(https://images.pexels.com/photos/1423827/pexels-photo-1423827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)' }}></div>
@@ -33,7 +33,7 @@ class Home extends Component {
           </div>
 
           <div className="slider-container">
-            <h6 className="section-title mt-1">Travelers Favorite Gems</h6>
+            <h6 className="section-title mt-1">Travelers&apos; Favorite Gems</h6>
             <div className="horizontal-scroller">
               <div className="box scroll-item" style={{ backgroundImage: 'url(https://images.pexels.com/photos/1423827/pexels-photo-1423827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)' }}></div>
               <div className="box scroll-item" style={{ backgroundImage: 'url(https://images.pexels.com/photos/1423827/pexels-photo-1423827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)' }}></div>
@@ -47,6 +47,13 @@ class Home extends Component {
           <div className="list-container">
             <h6 className="section-title mt-4">Explore The Area</h6>
             <div className="row justify-content-between gy-3">
+              <div className="col col-6">
+                <div className="box" style={{ backgroundImage: 'url(https://images.pexels.com/photos/1423827/pexels-photo-1423827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)' }}></div>
+                <p className="text-center m-1">Places to stay</p>
+              </div>
+              <div className="col col-6">
+                <div className="box" style={{ backgroundImage: 'url(https://images.pexels.com/photos/1423827/pexels-photo-1423827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)' }}></div>
+              </div>
               <div className="col col-6">
                 <div className="box" style={{ backgroundImage: 'url(https://images.pexels.com/photos/1423827/pexels-photo-1423827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)' }}></div>
               </div>
