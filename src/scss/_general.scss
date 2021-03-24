@@ -7,9 +7,63 @@ body {
 }
 
 .container-section {
-  padding: 1rem 1.75rem;
+  padding: 1rem 2rem;
 }
 
 .section-title {
-  @extend .mb-3
+  @extend .mb-2;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.box {
+  width: 9.5rem;
+  height: 9.5rem;
+  background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+  border-radius: 0.75rem;
+}
+
+.horizontal-scroller {
+  overflow: auto;
+  white-space: nowrap;
+
+  .scroll-item {
+    display: inline-block;
+    margin: 0.25rem;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+      filter: blur(2.5px);
+      -webkit-filter: blur(2.5px);
+    }
+  }
+}
+
+.custom-btn {
+  border-radius: 5rem;
+  min-width: 14rem;
+  padding: 0.9rem;
+}
+
+.form-group > input {
+  background-color: #f3f1f1;
+  padding: 1rem 0.5rem;
+  border-radius: 0.3rem;
+  border: 0;
+
+  &:focus {
+    background-color: #d5d2d2;
+    box-shadow: none;
+    border: 0;
+  }
+}
+
+a {
+  color: $secondary;
 }
