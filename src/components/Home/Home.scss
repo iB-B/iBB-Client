@@ -1,15 +1,19 @@
 .hero-banner {
-	background-color: red;
-	padding: 2rem 1.75rem 1rem 1.75rem;
-	min-height: 15rem;
+	background-image: url(https://images.pexels.com/photos/1423827/pexels-photo-1423827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+	background-repeat: no-repeat, repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 3rem 1.75rem 1rem 1.75rem;
+	min-height: 25rem;
 
 	input {
+		box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
 		border: 0;
-		outline: 0!important;
+		outline: none;
 
-		&:active {
-			border: 0;
-			outline: 0!important;
+		&:active, &:focus {
+			outline: none;
+			box-shadow: none;
 		}
 	}
 }
