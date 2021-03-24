@@ -20,7 +20,31 @@ class Home extends Component {
         </Jumbotron>
 
         <div className="container-section">
-          <h6 className="section-title">Locals Favorite Gems</h6>
+          <div className="list-container">
+            <h6 className="section-title">Locals Favorite Gems</h6>
+            <div className="horizontal-scroller">
+              <div className="box scroll-item" style={{ backgroundImage: 'url(https://images.pexels.com/photos/1423827/pexels-photo-1423827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)' }}></div>
+              <div className="box scroll-item" style={{ backgroundImage: 'url(https://images.pexels.com/photos/1423827/pexels-photo-1423827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)' }}></div>
+              <div className="box scroll-item" style={{ backgroundImage: 'url(https://images.pexels.com/photos/1423827/pexels-photo-1423827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)' }}></div>
+              <div className="box scroll-item" style={{ backgroundImage: 'url(https://images.pexels.com/photos/1423827/pexels-photo-1423827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)' }}></div>
+              <div className="box scroll-item" style={{ backgroundImage: 'url(https://images.pexels.com/photos/1423827/pexels-photo-1423827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)' }}></div>
+              <div className="box scroll-item" style={{ backgroundImage: 'url(https://images.pexels.com/photos/1423827/pexels-photo-1423827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)' }}></div>
+            </div>
+          </div>
+
+          <div className="list-container">
+            <h6 className="section-title mt-1">Travelers Favorite Gems</h6>
+            <div className="horizontal-scroller">
+              <div className="box scroll-item" style={{ backgroundImage: 'url(https://images.pexels.com/photos/1423827/pexels-photo-1423827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)' }}></div>
+              <div className="box scroll-item" style={{ backgroundImage: 'url(https://images.pexels.com/photos/1423827/pexels-photo-1423827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)' }}></div>
+              <div className="box scroll-item" style={{ backgroundImage: 'url(https://images.pexels.com/photos/1423827/pexels-photo-1423827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)' }}></div>
+              <div className="box scroll-item" style={{ backgroundImage: 'url(https://images.pexels.com/photos/1423827/pexels-photo-1423827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)' }}></div>
+              <div className="box scroll-item" style={{ backgroundImage: 'url(https://images.pexels.com/photos/1423827/pexels-photo-1423827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)' }}></div>
+              <div className="box scroll-item" style={{ backgroundImage: 'url(https://images.pexels.com/photos/1423827/pexels-photo-1423827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)' }}></div>
+            </div>
+          </div>
+
+          <h6 className="section-title mt-5">Explore The Area</h6>
         </div>
       </Fragment>
     )
