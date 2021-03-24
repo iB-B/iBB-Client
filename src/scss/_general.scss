@@ -13,6 +13,7 @@ body {
 .section-title {
   @extend .mb-2;
   font-weight: bold;
+  font-size: 18px;
 }
 
 .box {
@@ -42,4 +43,27 @@ body {
       -webkit-filter: blur(2.5px);
     }
   }
+}
+
+.custom-btn {
+  border-radius: 5rem;
+  min-width: 15rem;
+  padding: 0.9rem;
+}
+
+.form-group > input {
+  background-color: #f3f1f1;
+  padding: 0.9rem 0.5rem;
+  border-radius: 0.3rem;
+  border: 0;
+
+  &:focus {
+    background-color: #d5d2d2;
+    box-shadow: none;
+    border: 0;
+  }
+}
+
+a {
+  color: $secondary;
 }
