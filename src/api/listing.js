@@ -1,23 +1,29 @@
-/* import apiUrl from '../apiConfig'
+import apiUrl from '../apiConfig'
 import axios from 'axios'
 
-export const createListing = (user, ) => {
+export const createListing = (user, listing) => {
   return axios({
     method: 'POST',
-    url: apiUrl + '/sign-up',
+    url: apiUrl + '/create-listing',
     headers: {
       'Authorization': `Bearer ${user.token}`
     },
     data: {
-      credentials: {
-        email: credentials.email,
-        password: credentials.password,
-        password_confirmation: credentials.passwordConfirmation
+      listing: {
+        name: listing.name,
+        address: listing.address,
+        city: listing.city,
+        stateProvince: listing.stateProvince,
+        postalCode: listing.postalCode,
+        latitude: listing.latitude,
+        longitude: listing.longitude,
+        price: listing.price,
+        description: listing.description
       }
     }
   })
 }
-
+/*
 export const signIn = credentials => {
   return axios({
     url: apiUrl + '/sign-in',
