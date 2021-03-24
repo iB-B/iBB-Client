@@ -16,8 +16,8 @@ body {
 }
 
 .box {
-  width: 9rem;
-  height: 9rem;
+  width: 9.5rem;
+  height: 9.5rem;
   background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -38,6 +38,8 @@ body {
 
     &:last-child {
       margin-right: 0;
+      filter: blur(2.5px);
+      -webkit-filter: blur(2.5px);
     }
   }
 }
