@@ -5,3 +5,11 @@ body {
 .container-fluid {
   padding: 65px 0 0 0;
 }
+
+.container-section {
+  padding: 1rem 1.75rem;
+}
+
+.section-title {
+  @extend .mb-3
+}
