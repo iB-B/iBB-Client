@@ -85,7 +85,7 @@ class SignIn extends Component {
               </Button>
 
               <div className="text-center mt-3">
-                <h5 className="text-primary fw-light m-0" style={{ fontSize: '19px' }}>
+                <h5 className="text-primary fw-light m-0 fs-6">
                   Don&apos;t have an account?
                   <br />
                   <a className="text-primary" href="#sign-up">Sign Up</a>
