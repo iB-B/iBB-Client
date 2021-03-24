@@ -46,7 +46,6 @@ class SignIn extends Component {
 
   render () {
     const { email, password } = this.state
-    const link = <Link to='/sign-up'>Sign up!</Link>
 
     return (
       <div className="container-section">
