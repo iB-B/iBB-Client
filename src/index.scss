@@ -1,1 +1,9 @@
+// Importing bootstrap styles
 @import '~bootstrap/scss/bootstrap';
+
+// Importing custom styles
+@import 'scss/_general';
+
+// Importing styles for pages
+@import 'components/Header/Header.scss';
+@import 'components/Home/Home.scss';

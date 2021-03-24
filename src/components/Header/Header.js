@@ -11,27 +11,20 @@ const authenticatedOptions = (
 
 const unauthenticatedOptions = (
   <Fragment>
-    <Nav.Link href="#sign-up">Sign Up</Nav.Link>
     <Nav.Link href="#sign-in">Sign In</Nav.Link>
-  </Fragment>
-)
-
-const alwaysOptions = (
-  <Fragment>
-    <Nav.Link href="#/">Home</Nav.Link>
+    <Nav.Link href="#listing">Search For Stay</Nav.Link>
+    <Nav.Link href="#listing/create">Create A Listing</Nav.Link>
   </Fragment>
 )
 
 const Header = ({ user }) => (
-  <Navbar bg="primary" variant="dark" expand="md">
-    <Navbar.Brand href="#">
-      react-auth-template
-    </Navbar.Brand>
+  <Navbar fixed="top" bg="white" variant="light" expand="md">
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
+    <Navbar.Brand href="#">
+      Hidden Gems
+    </Navbar.Brand>
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="ml-auto">
-        { user && <span className="navbar-text mr-2">Welcome, {user.email}</span>}
-        { alwaysOptions }
         { user ? authenticatedOptions : unauthenticatedOptions }
       </Nav>
     </Navbar.Collapse>
