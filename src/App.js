@@ -9,6 +9,9 @@ import SignUp from './components/SignUp/SignUp'
 import SignIn from './components/SignIn/SignIn'
 import SignOut from './components/SignOut/SignOut'
 import ChangePassword from './components/ChangePassword/ChangePassword'
+import Gem from './components/Gem/Gem'
+import Gems from './components/Gem/GemIndex'
+import GemShow from './components/Gem/GemShow'
 import Home from './components/Home/Home'
 
 class App extends Component {
@@ -68,6 +71,12 @@ class App extends Component {
           )} />
           <AuthenticatedRoute user={user} path='/change-password' render={() => (
             <ChangePassword msgAlert={this.msgAlert} user={user} />
+          )} />
+          <AuthenticatedRoute user={user} path='/create-gem' render={() => (
+            <Gem msgAlert={this.msgAlert} user={user} match={this.props.match}/>
+          )} />
+          <AuthenticatedRoute user={user} path='/create-gem' render={() => (
+            <Gems msgAlert={this.msgAlert} user={user} match={this.props.match}/>
           )} />
         </main>
       </Fragment>
