@@ -24,7 +24,7 @@ const alwaysOptions = (
 )
 
 const Header = ({ user }) => (
-  <Navbar fixed="top" bg="white" variant="light" expand="md">
+  <Navbar fixed="top" bg="primary" variant="dark" expand="md">
     <Navbar.Brand href="#">
       Hidden Gems
     </Navbar.Brand>

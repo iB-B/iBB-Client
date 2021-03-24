@@ -49,42 +49,51 @@ class SignIn extends Component {
     const link = <Link to='/sign-up'>Sign up!</Link>
 
     return (
-      <div className="row">
-        <div className="col-sm-10 col-md-8 mx-auto mt-5">
-          <h3>Sign In</h3>
-          <Form onSubmit={this.onSignIn}>
-            <Form.Group controlId="email">
-              <Form.Label>Email address</Form.Label>
-              <Form.Control
-                required
-                type="email"
-                name="email"
-                value={email}
-                placeholder="Enter email"
-                onChange={this.handleChange}
-              />
-            </Form.Group>
-            <Form.Group controlId="password">
-              <Form.Label>Password</Form.Label>
-              <Form.Control
-                required
-                name="password"
-                value={password}
-                type="password"
-                placeholder="Password"
-                onChange={this.handleChange}
-              />
-            </Form.Group>
-            <Button
-              variant="primary"
-              type="submit"
-            >
-              Submit
-            </Button>
-          </Form>
-          <p>
-            <br />Need an account? {link}
-          </p>
+      <div className="container-section">
+        <div className="row">
+          <div className="col-12 mt-5">
+            <h6 className="section-title mb-3">Sign In</h6>
+            <Form onSubmit={this.onSignIn}>
+              <Form.Group controlId="email">
+                <Form.Label>Email</Form.Label>
+                <Form.Control
+                  required
+                  type="email"
+                  name="email"
+                  value={email}
+                  placeholder="Enter email"
+                  onChange={this.handleChange}
+                />
+              </Form.Group>
+              <Form.Group controlId="password">
+                <Form.Label className="mt-2">Password</Form.Label>
+                <Form.Control
+                  required
+                  name="password"
+                  value={password}
+                  type="password"
+                  placeholder="Password"
+                  onChange={this.handleChange}
+                />
+              </Form.Group>
+              <a className="small float-end mt-1">Forgot Password?</a>
+              <Button
+                variant="primary"
+                type="submit"
+                className="custom-btn mx-auto d-block mt-5"
+              >
+                Sign In
+              </Button>
+
+              <div className="text-center mt-3">
+                <h5 className="text-primary fw-light m-0" style={{ fontSize: '19px' }}>
+                  Don&apos;t have an account?
+                  <br />
+                  <a className="text-primary" href="#sign-up">Sign Up</a>
+                </h5>
+              </div>
+            </Form>
+          </div>
         </div>
       </div>
     )
