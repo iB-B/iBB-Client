@@ -19,10 +19,10 @@ const unauthenticatedOptions = (
 
 const Header = ({ user }) => (
   <Navbar fixed="top" bg="white" variant="light" expand="md">
-    <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Brand href="#">
       Hidden Gems
     </Navbar.Brand>
+    <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="ml-auto">
         { user ? authenticatedOptions : unauthenticatedOptions }
