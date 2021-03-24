@@ -17,6 +17,12 @@ const unauthenticatedOptions = (
   </Fragment>
 )
 
+const alwaysOptions = (
+  <Fragment>
+    <Nav.Link href="#/">Home</Nav.Link>
+  </Fragment>
+)
+
 const Header = ({ user }) => (
   <Navbar fixed="top" bg="white" variant="light" expand="md">
     <Navbar.Brand href="#">
@@ -25,6 +31,7 @@ const Header = ({ user }) => (
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="ml-auto">
+        { alwaysOptions }
         { user ? authenticatedOptions : unauthenticatedOptions }
       </Nav>
     </Navbar.Collapse>
