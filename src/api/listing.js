@@ -23,6 +23,15 @@ export const createListing = (user, listing) => {
     }
   })
 }
+export const showListing = (id, user) => {
+  return axios({
+    url: apiUrl + '/listings/' + id,
+    method: 'GET',
+    headers: {
+      'Authorization': `Bearer ${user.token}`
+    }
+  })
+}
 /*
 export const signIn = credentials => {
   return axios({

@@ -33,14 +33,17 @@ class CreateListing extends Component {
     const { user, msgAlert, history } = this.props
     if (user) {
       createListing(user, this.state)
-        .then(() => msgAlert({
-          heading: 'Listing Successful.',
-          message: messages.createListingSuccess,
-          variant: 'success'
-        }))
-        .then(() => history.push('/index-my-listings'))
+        .then((data) => {
+          msgAlert({
+            heading: 'Listing Successful.',
+            message: messages.createListingSuccess,
+            variant: 'success'
+          })
+          return data
+        })
+        .then((data) => history.push('/listings/view/' + data.data.listing.id))
         .catch(error => {
-          this.setState({ name: '', address: '', city: '', stateProvince: '', postalCode: '', latitude: '', longitude: '', price: '', description: '' })
+          this.setState({ name: '', address: '', city: '', stateProvince: '', postalCode: '', price: '', description: '' })
           msgAlert({
             heading: 'Listing Failed with error: ' + error.message,
             message: messages.createListingFailure,

@@ -1,19 +1,44 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
+import { showListing } from '../../api/listing'
 
 import Button from 'react-bootstrap/Button'
 
 class ViewListing extends Component {
   constructor (props) {
     super(props)
-    this.state = {}
+    this.state = {
+      name: '',
+      description: '',
+      price: 0
+    }
+  }
+
+  componentDidMount () {
+    const { user, msgAlert, match: { params } } = this.props
+    // console.log(params.id)
+
+    showListing(params.id, user)
+      .then(res => this.setState(res.data.listing))
+      .then(() => msgAlert({
+        heading: 'Showing Listing Successfully',
+        message: 'Your Listing is now displayed.',
+        variant: 'success'
+      }))
+      .catch(error => {
+        msgAlert({
+          heading: 'Failed to show your Listing',
+          message: 'Failed to show Listing with error: ' + error.message,
+          variant: 'danger'
+        })
+      })
   }
 
   render () {
     return (
       <div className="container-section">
         <div className="row">
-          <h6 className="section-title mt-3 mb-0">Dragonfly Inn</h6>
+          <h6 className="section-title mt-3 mb-0">{this.state.name || ''}</h6>
           <div className="listing-container">
             <small className="text-secondary"><i>4.8 star review</i></small>
 
@@ -27,10 +52,10 @@ class ViewListing extends Component {
             </div>
 
             <div className="listing-description mt-3">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum ut nunc a tincidunt. Mauris condimentum nisi non luctus eleifend. Aenean dapibus, sapien vitae malesuada luctus, libero dui aliquet odio, a consectetur sapien quam vel felis.
+              {this.state.description}
             </div>
 
-            <p className="listing-price my-3"><strong>$95</strong> /night</p>
+            <p className="listing-price my-3"><strong>{this.state.price}</strong> /night</p>
 
             <Button
               variant="primary"
