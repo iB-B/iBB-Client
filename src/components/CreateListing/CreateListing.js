@@ -5,7 +5,6 @@ import { createListing } from '../../api/listing'
 import messages from '../AutoDismissAlert/messages'
 
 // import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 
@@ -55,39 +54,40 @@ class CreateListing extends Component {
     const { name, address, city, stateProvince, postalCode, price, description } = this.state
 
     return (
-      <div className="row">
-        <Row>
+      <div className="container-section">
+        <div className="row">
+          <h6 className="section-title mt-3">Create a listing</h6>
           <Form onSubmit={this.onCreateListing}>
             <Form.Group controlId="name">
-              <Form.Label>Name</Form.Label>
+              <Form.Label>Name of listing</Form.Label>
               <Form.Control
                 required
                 type="text"
                 name="name"
                 value={name}
-                placeholder="Enter a name"
+                placeholder="Dragonfly Inn"
                 onChange={this.handleChange}
               />
             </Form.Group>
             <Form.Group controlId="address">
-              <Form.Label>Address</Form.Label>
+              <Form.Label>Address of listing</Form.Label>
               <Form.Control
                 required
                 type="text"
                 name="address"
                 value={address}
-                placeholder="Enter the address of your lodge."
+                placeholder="123 main st"
                 onChange={this.handleChange}
               />
             </Form.Group>
             <Form.Group controlId="city">
-              <Form.Label>City</Form.Label>
+              <Form.Label>City of listing</Form.Label>
               <Form.Control
                 required
                 type="text"
                 name="city"
                 value={city}
-                placeholder="Enter your city."
+                placeholder="Austin"
                 onChange={this.handleChange}
               />
             </Form.Group>
@@ -98,51 +98,52 @@ class CreateListing extends Component {
                 type="text"
                 name="stateProvince"
                 value={stateProvince}
-                placeholder="Enter your state or province."
+                placeholder="Texas"
                 onChange={this.handleChange}
               />
             </Form.Group>
             <Form.Group controlId="postalCode">
-              <Form.Label>Postal code</Form.Label>
+              <Form.Label>Postal / Zip code</Form.Label>
               <Form.Control
                 required
                 type="text"
                 name="postalCode"
                 value={postalCode}
-                placeholder="Enter your postal code."
-                onChange={this.handleChange}
-              />
-            </Form.Group>
-            <Form.Group controlId="price">
-              <Form.Label>Price</Form.Label>
-              <Form.Control
-                required
-                type="text"
-                name="price"
-                value={price}
-                placeholder="Enter your asking price."
+                placeholder="012345"
                 onChange={this.handleChange}
               />
             </Form.Group>
             <Form.Group controlId="description">
-              <Form.Label>Description</Form.Label>
+              <Form.Label>Description of listing</Form.Label>
               <Form.Control
                 required
                 type="text"
                 name="description"
                 value={description}
-                placeholder="Enter a description of your lodge."
+                placeholder="Lorem ipsum dolor sit amet lorem ipsum"
+                onChange={this.handleChange}
+              />
+            </Form.Group>
+            <Form.Group controlId="price">
+              <Form.Label>Price of listing</Form.Label>
+              <Form.Control
+                required
+                type="text"
+                name="price"
+                value={price}
+                placeholder="$$$"
                 onChange={this.handleChange}
               />
             </Form.Group>
             <Button
               variant="primary"
               type="submit"
+              className="custom-btn mx-auto d-block mt-5"
             >
-              Submit
+              Post Listing
             </Button>
           </Form>
-        </Row>
+        </div>
       </div>
     )
   }

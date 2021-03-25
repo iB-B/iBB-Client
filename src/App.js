@@ -11,6 +11,7 @@ import SignOut from './components/SignOut/SignOut'
 import ChangePassword from './components/ChangePassword/ChangePassword'
 import Home from './components/Home/Home'
 import CreateListing from './components/CreateListing/CreateListing'
+import ViewListing from './components/ViewListing/ViewListing'
 
 class App extends Component {
   constructor (props) {
@@ -70,8 +71,11 @@ class App extends Component {
           <AuthenticatedRoute user={user} path='/change-password' render={() => (
             <ChangePassword msgAlert={this.msgAlert} user={user} />
           )} />
-          <Route user={user} path='/listings/create' render={() => (
+          <Route user={user} exact path='/listings/create' render={() => (
             <CreateListing msgAlert={this.msgAlert} user={user} />
+          )} />
+          <Route user={user} exact path='/listings/view/:id' render={() => (
+            <ViewListing msgAlert={this.msgAlert} user={user} />
           )} />
         </main>
       </Fragment>
