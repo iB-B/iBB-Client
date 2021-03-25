@@ -4,7 +4,7 @@ import axios from 'axios'
 export const createListing = (user, listing) => {
   return axios({
     method: 'POST',
-    url: apiUrl + '/create-listing',
+    url: apiUrl + '/listings',
     headers: {
       'Authorization': `Bearer ${user.token}`
     },
