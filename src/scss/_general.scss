@@ -14,6 +14,17 @@ body, html {
 .section-title {
   margin-bottom: 0.5rem;
   font-size: 18px;
+
+  &.return-title::before {
+    position: absolute;
+    width: 10px;
+    top: 89.5px;
+    left: 0.5rem;
+    color: #000;
+    font-size: 32px;
+    font-weight: 400;
+    content: quote("<");
+  }
 }
 
 form {
@@ -33,6 +44,7 @@ form {
 	background-position: center;
 	background-size: cover;
   border-radius: 0.75rem;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .horizontal-scroller {
@@ -81,4 +93,9 @@ form {
 
 a {
   color: $secondary;
+
+  &.no-link-style {
+    text-decoration: none;
+    color: #000;
+  }
 }

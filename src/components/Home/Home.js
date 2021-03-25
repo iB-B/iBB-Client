@@ -21,7 +21,7 @@ class Home extends Component {
 
         <div className="container-section">
           <div className="slider-container">
-            <h6 className="section-title">Locals&apos; Favorite Gems</h6>
+            <h6 className="section-title"><a className="no-link-style" href="#/gems">Locals&apos; Favorite Gems</a></h6>
             <div className="horizontal-scroller">
               <div className="box gems-box scroll-item" style={{ backgroundImage: 'url(https://images.pexels.com/photos/554609/pexels-photo-554609.jpeg?auto=compress&cs=tinysrgb&h=650&w=940)' }}></div>
               <div className="box gems-box scroll-item" style={{ backgroundImage: 'url(https://images.pexels.com/photos/2462622/pexels-photo-2462622.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260)' }}></div>
@@ -33,7 +33,7 @@ class Home extends Component {
           </div>
 
           <div className="slider-container">
-            <h6 className="section-title mt-1">Travelers&apos; Favorite Gems</h6>
+            <h6 className="section-title mt-1"><a className="no-link-style" href="#/travelergems">Travelers&apos; Favorite Gems</a></h6>
             <div className="horizontal-scroller">
               <div className="box gems-box scroll-item" style={{ backgroundImage: 'url(https://images.pexels.com/photos/163407/cyclists-trail-bike-clouds-163407.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)' }}></div>
               <div className="box gems-box scroll-item" style={{ backgroundImage: 'url(https://images.pexels.com/photos/5750131/pexels-photo-5750131.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260)' }}></div>
@@ -49,22 +49,27 @@ class Home extends Component {
             <div className="row justify-content-between gy-3">
               <div className="col col-6">
                 <div className="box" style={{ backgroundImage: 'url(https://images.pexels.com/photos/1581384/pexels-photo-1581384.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)' }}></div>
-                <p className="text-center m-1">Places to stay</p>
+                <p className="text-center m-2">Places to stay</p>
               </div>
               <div className="col col-6">
                 <div className="box" style={{ backgroundImage: 'url(https://images.pexels.com/photos/6097827/pexels-photo-6097827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)' }}></div>
+                <p className="text-center m-2">Bars & eateries</p>
               </div>
               <div className="col col-6">
                 <div className="box" style={{ backgroundImage: 'url(https://images.pexels.com/photos/1876045/pexels-photo-1876045.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)' }}></div>
+                <p className="text-center m-2">Outdoor fun</p>
               </div>
               <div className="col col-6">
                 <div className="box" style={{ backgroundImage: 'url(https://images.pexels.com/photos/4969993/pexels-photo-4969993.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260)' }}></div>
+                <p className="text-center m-2">Historic sites</p>
               </div>
               <div className="col col-6">
                 <div className="box" style={{ backgroundImage: 'url(https://images.pexels.com/photos/4993215/pexels-photo-4993215.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)' }}></div>
+                <p className="text-center m-2">Shopping</p>
               </div>
               <div className="col col-6">
                 <div className="box" style={{ backgroundImage: 'url(https://images.pexels.com/photos/5533959/pexels-photo-5533959.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)' }}></div>
+                <p className="text-center m-2">Spa & beauty</p>
               </div>
             </div>
           </div>

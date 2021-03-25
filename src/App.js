@@ -12,6 +12,9 @@ import ChangePassword from './components/ChangePassword/ChangePassword'
 import Home from './components/Home/Home'
 import CreateListing from './components/CreateListing/CreateListing'
 import ViewListing from './components/ViewListing/ViewListing'
+import LocalGems from './components/Gems/LocalGems'
+import TravelerGems from './components/Gems/TravelerGems'
+import GemsCategory from './components/GemsCategory/GemsCategory'
 
 class App extends Component {
   constructor (props) {
@@ -71,11 +74,23 @@ class App extends Component {
           <AuthenticatedRoute user={user} path='/change-password' render={() => (
             <ChangePassword msgAlert={this.msgAlert} user={user} />
           )} />
+          <Route user={user} exact path='/listings' render={() => (
+            <CreateListing msgAlert={this.msgAlert} user={user} />
+          )} />
           <Route user={user} exact path='/listings/create' render={() => (
             <CreateListing msgAlert={this.msgAlert} user={user} />
           )} />
           <AuthenticatedRoute user={user} exact path='/listings/view/:id' render={() => (
             <ViewListing msgAlert={this.msgAlert} user={user} />
+          )} />
+          <Route user={user} exact path='/gems/category/:id' render={() => (
+            <GemsCategory msgAlert={this.msgAlert} user={user} />
+          )} />
+          <Route user={user} path='/gems' render={() => (
+            <LocalGems msgAlert={this.msgAlert} user={user} />
+          )} />
+          <Route user={user} path='/travelergems' render={() => (
+            <TravelerGems msgAlert={this.msgAlert} user={user} />
           )} />
         </main>
       </Fragment>
