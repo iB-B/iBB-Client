@@ -65,6 +65,13 @@ form {
       -webkit-filter: blur(2.5px);
     }
   }
+
+  &.smaller-scroller {
+    .scroll-item {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
 }
 
 .custom-btn {
@@ -72,6 +79,11 @@ form {
   min-width: 14rem;
   padding: 0.9rem;
   box-shadow: 0px 8px 40px rgba(134, 92, 160, 0.4);
+
+  &.smaller-btn {
+    min-width: 10rem;
+    padding: 0.75rem;
+  }
 }
 
 .form-group > input {
@@ -88,6 +100,18 @@ form {
 
   &::placeholder {
     color: #C2BDBD;
+  }
+}
+
+.listing-section {
+  margin-top: 2.5rem;
+
+  .scroll-title {
+    font-weight: 600;
+  }
+
+  &:first-of-type {
+    margin-top: 0;
   }
 }
 

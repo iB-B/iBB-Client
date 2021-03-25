@@ -10,6 +10,7 @@ import SignIn from './components/SignIn/SignIn'
 import SignOut from './components/SignOut/SignOut'
 import ChangePassword from './components/ChangePassword/ChangePassword'
 import Home from './components/Home/Home'
+import IndexListings from './components/IndexListings/IndexListings'
 import CreateListing from './components/CreateListing/CreateListing'
 import ViewListing from './components/ViewListing/ViewListing'
 import GemsCategory from './components/GemsCategory/GemsCategory'
@@ -73,7 +74,7 @@ class App extends Component {
             <ChangePassword msgAlert={this.msgAlert} user={user} />
           )} />
           <Route user={user} exact path='/listings' render={() => (
-            <CreateListing msgAlert={this.msgAlert} user={user} />
+            <IndexListings msgAlert={this.msgAlert} user={user} />
           )} />
           <Route user={user} exact path='/listings/create' render={() => (
             <CreateListing msgAlert={this.msgAlert} user={user} />
