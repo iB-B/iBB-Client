@@ -4,7 +4,7 @@ import axios from 'axios'
 export const createListing = (user, listing) => {
   return axios({
     method: 'POST',
-    url: apiUrl + '/create-listing',
+    url: apiUrl + '/listings',
     headers: {
       'Authorization': `Bearer ${user.token}`
     },
@@ -26,10 +26,7 @@ export const createListing = (user, listing) => {
 export const showListing = (id, user) => {
   return axios({
     url: apiUrl + '/listings/' + id,
-    method: 'GET',
-    headers: {
-      'Authorization': `Bearer ${user.token}`
-    }
+    method: 'GET'
   })
 }
 export const indexListings = (listing) => {

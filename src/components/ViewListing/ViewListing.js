@@ -20,11 +20,6 @@ class ViewListing extends Component {
 
     showListing(params.id, user)
       .then(res => this.setState(res.data.listing))
-      .then(() => msgAlert({
-        heading: 'Showing Listing Successfully',
-        message: 'Your Listing is now displayed.',
-        variant: 'success'
-      }))
       .catch(error => {
         msgAlert({
           heading: 'Failed to show your Listing',
@@ -55,7 +50,7 @@ class ViewListing extends Component {
               {this.state.description}
             </div>
 
-            <p className="listing-price my-3"><strong>{this.state.price}</strong> /night</p>
+            <p className="listing-price my-3"><strong>${this.state.price}</strong> /night</p>
 
             <Button
               variant="primary"

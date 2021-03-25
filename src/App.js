@@ -79,7 +79,7 @@ class App extends Component {
           <Route user={user} exact path='/listings/create' render={() => (
             <CreateListing msgAlert={this.msgAlert} user={user} />
           )} />
-          <AuthenticatedRoute user={user} exact path='/listings/view/:id' render={() => (
+          <Route user={user} exact path='/listings/view/:id' render={() => (
             <ViewListing msgAlert={this.msgAlert} user={user} />
           )} />
           <Route user={user} exact path='/gems/category/:id' render={() => (
