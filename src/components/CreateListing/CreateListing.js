@@ -19,8 +19,6 @@ class CreateListing extends Component {
       city: '',
       stateProvince: '',
       postalCode: '',
-      /*  latitude: '',
-      longitude: '', */
       price: '',
       description: ''
     }
@@ -54,7 +52,7 @@ class CreateListing extends Component {
   }
 
   render () {
-    const { name, address, city, stateProvince, postalCode, /* latitude, longitude, */ price, description } = this.state
+    const { name, address, city, stateProvince, postalCode, price, description } = this.state
 
     return (
       <div className="row">
@@ -115,28 +113,6 @@ class CreateListing extends Component {
                 onChange={this.handleChange}
               />
             </Form.Group>
-            {/*  <Form.Group controlId="latitude">
-              <Form.Label>Latitude</Form.Label>
-              <Form.Control
-                required
-                type="text"
-                name="latitude"
-                value={latitude}
-                placeholder="Enter the latitude"
-                onChange={this.handleChange}
-              />
-            </Form.Group>
-            <Form.Group controlId="longitude">
-              <Form.Label>Longitude</Form.Label>
-              <Form.Control
-                required
-                type="text"
-                name="longitude"
-                value={longitude}
-                placeholder="Enter the longitude"
-                onChange={this.handleChange}
-              />
-            </Form.Group> */}
             <Form.Group controlId="price">
               <Form.Label>Price</Form.Label>
               <Form.Control
