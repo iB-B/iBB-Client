@@ -56,7 +56,7 @@ class CreateListing extends Component {
     return (
       <div className="container-section">
         <div className="row">
-          <h6 className="section-title mt-3">Create a listing</h6>
+          <h6 className="section-title mt-3 mb-0">Create a listing</h6>
           <Form onSubmit={this.onCreateListing}>
             <Form.Group controlId="name">
               <Form.Label>Name of listing</Form.Label>
@@ -138,7 +138,7 @@ class CreateListing extends Component {
             <Button
               variant="primary"
               type="submit"
-              className="custom-btn mx-auto d-block mt-5"
+              className="custom-btn mx-auto d-block mt-4"
             >
               Post Listing
             </Button>
