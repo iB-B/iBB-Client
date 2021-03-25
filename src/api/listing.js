@@ -4,7 +4,7 @@ import axios from 'axios'
 export const createListing = (user, listing) => {
   return axios({
     method: 'POST',
-    url: apiUrl + '/listings',
+    url: apiUrl + '/create-listing',
     headers: {
       'Authorization': `Bearer ${user.token}`
     },
@@ -32,43 +32,9 @@ export const showListing = (id, user) => {
     }
   })
 }
-/*
-export const signIn = credentials => {
+export const indexListings = (listing) => {
   return axios({
-    url: apiUrl + '/sign-in',
-    method: 'POST',
-    data: {
-      credentials: {
-        email: credentials.email,
-        password: credentials.password
-      }
-    }
+    url: apiUrl + '/listings/',
+    method: 'GET',
   })
 }
-
-export const signOut = user => {
-  return axios({
-    url: apiUrl + '/sign-out',
-    method: 'DELETE',
-    headers: {
-      'Authorization': `Bearer ${user.token}`
-    }
-  })
-}
-
-export const changePassword = (passwords, user) => {
-  return axios({
-    url: apiUrl + '/change-password',
-    method: 'PATCH',
-    headers: {
-      'Authorization': `Bearer ${user.token}`
-    },
-    data: {
-      passwords: {
-        old: passwords.oldPassword,
-        new: passwords.newPassword
-      }
-    }
-  })
-}
-*/
