@@ -4,28 +4,28 @@ import Navbar from 'react-bootstrap/Navbar'
 
 const authenticatedOptions = (
   <Fragment>
-    <Nav.Link href="#change-password">Change Password</Nav.Link>
-    <Nav.Link href="#sign-out">Sign Out</Nav.Link>
-    <Nav.Link href="#listings/create">Create A Listing</Nav.Link>
+    <Nav.Link eventKey="1" href="#change-password">Change Password</Nav.Link>
+    <Nav.Link eventKey="2" href="#sign-out">Sign Out</Nav.Link>
+    <Nav.Link eventKey="3" href="#listings/create">Create A Listing</Nav.Link>
   </Fragment>
 )
 
 const unauthenticatedOptions = (
   <Fragment>
-    <Nav.Link href="#sign-in">Sign In</Nav.Link>
-    <Nav.Link href="#listing">Search For Stay</Nav.Link>
-    <Nav.Link href="#listings/create">Create A Listing</Nav.Link>
+    <Nav.Link eventKey="4" href="#sign-in">Sign In</Nav.Link>
+    <Nav.Link eventKey="5" href="#listing">Search For Stay</Nav.Link>
+    <Nav.Link eventKey="6" href="#listings/create">Create A Listing</Nav.Link>
   </Fragment>
 )
 
 const alwaysOptions = (
   <Fragment>
-    <Nav.Link href="#/">Home</Nav.Link>
+    <Nav.Link eventKey="7" href="#/">Home</Nav.Link>
   </Fragment>
 )
 
 const Header = ({ user }) => (
-  <Navbar fixed="top" bg="primary" variant="dark" expand="md">
+  <Navbar fixed="top" bg="primary" variant="dark" collapseOnSelect expand="md">
     <Navbar.Brand href="#">
       Hidden Gems
     </Navbar.Brand>

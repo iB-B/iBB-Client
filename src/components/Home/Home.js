@@ -49,22 +49,27 @@ class Home extends Component {
             <div className="row justify-content-between gy-3">
               <div className="col col-6">
                 <div className="box" style={{ backgroundImage: 'url(https://images.pexels.com/photos/1581384/pexels-photo-1581384.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)' }}></div>
-                <p className="text-center m-1">Places to stay</p>
+                <p className="text-center m-2">Places to stay</p>
               </div>
               <div className="col col-6">
                 <div className="box" style={{ backgroundImage: 'url(https://images.pexels.com/photos/6097827/pexels-photo-6097827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)' }}></div>
+                <p className="text-center m-2">Places to stay</p>
               </div>
               <div className="col col-6">
                 <div className="box" style={{ backgroundImage: 'url(https://images.pexels.com/photos/1876045/pexels-photo-1876045.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)' }}></div>
+                <p className="text-center m-2">Places to stay</p>
               </div>
               <div className="col col-6">
                 <div className="box" style={{ backgroundImage: 'url(https://images.pexels.com/photos/4969993/pexels-photo-4969993.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260)' }}></div>
+                <p className="text-center m-2">Places to stay</p>
               </div>
               <div className="col col-6">
                 <div className="box" style={{ backgroundImage: 'url(https://images.pexels.com/photos/4993215/pexels-photo-4993215.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)' }}></div>
+                <p className="text-center m-2">Places to stay</p>
               </div>
               <div className="col col-6">
                 <div className="box" style={{ backgroundImage: 'url(https://images.pexels.com/photos/5533959/pexels-photo-5533959.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)' }}></div>
+                <p className="text-center m-2">Places to stay</p>
               </div>
             </div>
           </div>
