@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
 import { showListing } from '../../api/listing'
-
+import Calendar from 'react-calendar'
+import 'react-calendar/dist/Calendar.css'
 import Button from 'react-bootstrap/Button'
 
 class ViewListing extends Component {
@@ -51,7 +52,7 @@ class ViewListing extends Component {
             </div>
 
             <p className="listing-price my-3"><strong>${this.state.price}</strong> /night</p>
-
+            <Calendar />
             <Button
               variant="primary"
               type="submit"
