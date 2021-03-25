@@ -35,6 +35,6 @@ export const showListing = (id, user) => {
 export const indexListings = (listing) => {
   return axios({
     url: apiUrl + '/listings/',
-    method: 'GET',
+    method: 'GET'
   })
 }
