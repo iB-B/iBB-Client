@@ -67,7 +67,7 @@ class SignUp extends Component {
                 />
               </Form.Group>
               <Form.Group controlId="password">
-                <Form.Label className="mt-2">Password</Form.Label>
+                <Form.Label>Password</Form.Label>
                 <Form.Control
                   required
                   name="password"
@@ -78,7 +78,7 @@ class SignUp extends Component {
                 />
               </Form.Group>
               <Form.Group controlId="passwordConfirmation">
-                <Form.Label className="mt-2">Confirm Password</Form.Label>
+                <Form.Label>Confirm Password</Form.Label>
                 <Form.Control
                   required
                   name="passwordConfirmation"

@@ -7,10 +7,10 @@
 	min-height: 24rem;
 
 	input {
-		box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
-		border: 0;
-		outline: none;
-		border-radius: 0.75rem;
+		background: #FCFCFC;
+		border: 2px solid #14142B;
+		box-sizing: border-box;
+		border-radius: 16px;
 
 		&:active, &:focus {
 			outline: none;

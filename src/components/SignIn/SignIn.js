@@ -65,7 +65,7 @@ class SignIn extends Component {
                 />
               </Form.Group>
               <Form.Group controlId="password">
-                <Form.Label className="mt-2">Password</Form.Label>
+                <Form.Label>Password</Form.Label>
                 <Form.Control
                   required
                   name="password"

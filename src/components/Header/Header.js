@@ -14,6 +14,7 @@ const unauthenticatedOptions = (
   <Fragment>
     <Nav.Link href="#sign-in">Sign In</Nav.Link>
     <Nav.Link href="#listing">Search For Stay</Nav.Link>
+    <Nav.Link href="#listings/create">Create A Listing</Nav.Link>
   </Fragment>
 )
 
