@@ -74,6 +74,13 @@ form {
   }
 }
 
+.delete-listing {
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+}
+
 .custom-btn {
   border-radius: 5rem;
   min-width: 14rem;

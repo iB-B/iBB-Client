@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
-import { showListing } from '../../api/listing'
-import Calendar from 'react-calendar'
+
+import { showListing, deleteListing } from '../../api/listing'
 import 'react-calendar/dist/Calendar.css'
+
+import Calendar from 'react-calendar'
 import Button from 'react-bootstrap/Button'
 
 class ViewListing extends Component {
@@ -30,13 +32,17 @@ class ViewListing extends Component {
       })
   }
 
+  deleteListing () {
+    deleteListing
+  }
+
   render () {
     return (
       <div className="container-section">
         <div className="row">
-          <h6 className="section-title mt-3 mb-0">{this.state.name || ''}</h6>
+          <h6 className="section-title mt-3 mb-0">{this.state.name || ''} <span className="float-end"><div onClick={deleteListing()} className="delete-listing text-primary">Delete</div></span></h6>
           <div className="listing-container">
-            <small className="text-secondary"><i>4.8 star review</i></small>
+            <small className="text-primary"><i>4.8 star review</i></small>
 
             <div className="horizontal-scroller mt-2">
               <div className="box scroll-item" style={{ backgroundImage: 'url(https://images.pexels.com/photos/554609/pexels-photo-554609.jpeg?auto=compress&cs=tinysrgb&h=650&w=940)' }}></div>
@@ -51,14 +57,15 @@ class ViewListing extends Component {
               {this.state.description}
             </div>
 
-            <p className="listing-price my-3"><strong>${this.state.price}</strong> /night</p>
+            <p className="listing-price mt-2"><strong>${this.state.price}</strong> /night</p>
+            <h6 className="section-title my-3">Book your stay</h6>
             <Calendar />
             <Button
               variant="primary"
               type="submit"
-              className="custom-btn mx-auto d-block mt-4 mb-4"
+              className="custom-btn mx-auto d-block mt-4 mb-5"
             >
-              View bookings
+              Check Availability
             </Button>
 
             <div className="slider-container">
