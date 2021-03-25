@@ -12,6 +12,7 @@ import ChangePassword from './components/ChangePassword/ChangePassword'
 import Home from './components/Home/Home'
 import CreateListing from './components/CreateListing/CreateListing'
 import ViewListing from './components/ViewListing/ViewListing'
+import GemsCategory from './components/GemsCategory/GemsCategory'
 
 class App extends Component {
   constructor (props) {
@@ -76,6 +77,9 @@ class App extends Component {
           )} />
           <AuthenticatedRoute user={user} exact path='/listings/view/:id' render={() => (
             <ViewListing msgAlert={this.msgAlert} user={user} />
+          )} />
+          <Route user={user} exact path='/gems/category/:id' render={() => (
+            <GemsCategory msgAlert={this.msgAlert} user={user} />
           )} />
         </main>
       </Fragment>
